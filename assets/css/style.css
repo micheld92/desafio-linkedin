@@ -13,6 +13,7 @@
     --positivo: #3ec786;
     --card-border-radius: 16px;
     --btn-border-radius: 16px;
+    --padding-top-main-content: 75px;
 }
 a{
     cursor: pointer;
@@ -38,6 +39,12 @@ border-radius: var(--card-border-radius);
 
 
 
+header{
+    width: 100%;
+    background: var(--fundo-card);
+    position: fixed;
+    z-index: 1000;
+}
 header nav{
     display: flex;
     width: 100%;
@@ -58,18 +65,37 @@ header nav .logo-search-wrapper .logo a{
     font-size: var(--logo-size);
 }
 header nav .main-menu-wrapper ul li a{
+    min-width: 80px;
     display: flex;
     flex-direction: column;
+    row-gap: 5px;
     text-align: center;
     color: var(--texto-principal);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
 }
-
-
+header nav .main-menu-wrapper ul li a:hover{
+    color: aqua;
+}
+header nav .main-menu-wrapper ul li a i{
+    font-size: 22px;
+}
+header nav .main-menu-wrapper ul li:last-child{
+    position: relative;
+}
+header nav .main-menu-wrapper ul li:last-child::before{
+    content: '';
+    position: absolute;
+    border-left: 1px solid white;
+    height: 100%;
+}
 
 aside{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    padding-top: var(--padding-top-main-content);
 }
 aside h6{
     color: var(--texto-principal);
@@ -127,6 +153,11 @@ aside .may-know .people-infos button{
 }
 main{
     max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: var(--padding-top-main-content);
+    padding-bottom: 50px;
 }
 .profile{
     display: flex;
@@ -261,7 +292,6 @@ main{
 
 .highlights{
     background: var(--fundo-card);
-    margin-top: 8px;
     padding: 22px 16px;
 }
 .highlights .post-list{
@@ -310,7 +340,6 @@ main{
 
 .activities{
     background: var(--fundo-card);
-    margin-top: 8px;
     padding: 18px 24px 0px 24px;
     position: relative;
 }
@@ -393,7 +422,6 @@ main{
 
 .about{
     background: var(--fundo-card);
-    margin-top: 8px;
     padding: 18px 24px;
 }
 .about h5{
@@ -411,7 +439,6 @@ main{
 
 .professional{
     background: var(--fundo-card);
-    margin-top: 8px;
     padding: 10px 24px;
 }
 .professional h5{
@@ -499,7 +526,6 @@ main{
 
 .academic{
     background: var(--fundo-card);
-    margin-top: 8px;
     padding: 10px 24px;
 }
 .academic h5{
@@ -539,7 +565,6 @@ main{
 
 .spoken-languages{
     background: var(--fundo-card);
-    margin-top: 8px;
     padding: 18px 24px;
 }
 .spoken-languages h5{
