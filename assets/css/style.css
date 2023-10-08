@@ -64,6 +64,28 @@ header nav .logo-search-wrapper .logo a{
     color: var(--texto-principal); 
     font-size: var(--logo-size);
 }
+header nav .logo-search-wrapper #search-input{
+    width: 280px;
+    padding-left: 40px;
+    padding-right: 10px;
+    background: url(/assets/fontawesome6.4.2/svgs/solid/magnifying-glass-solid-gray.svg) no-repeat var(--input);
+    background-size: 17px;
+    background-position-x: 15px;
+    background-position-y: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+    color: var(--texto-principal);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+header nav .logo-search-wrapper #search-input::placeholder {
+    color: var(--texto-secundario);
+}
+header nav .logo-search-wrapper #search-input::-ms-input-placeholder { /* Edge 12-18 */
+    color: var(--texto-secundario);
+}
 header nav .main-menu-wrapper ul li a{
     min-width: 80px;
     display: flex;
