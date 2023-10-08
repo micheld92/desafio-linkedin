@@ -68,7 +68,7 @@ header nav .logo-search-wrapper #search-input{
     width: 280px;
     padding-left: 40px;
     padding-right: 10px;
-    background: url(/assets/fontawesome6.4.2/svgs/solid/magnifying-glass-solid-gray.svg) no-repeat var(--input);
+    background: url('/assets/fontawesome6.4.2/svgs/solid/magnifying-glass-solid-gray.svg') no-repeat var(--input);
     background-size: 17px;
     background-position-x: 15px;
     background-position-y: center;
@@ -92,13 +92,15 @@ header nav .main-menu-wrapper ul li a{
     flex-direction: column;
     row-gap: 5px;
     text-align: center;
-    color: var(--texto-principal);
+    color: var(--texto-secundario);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
+    transition: color 0.3s ease-out 100ms;
 }
 header nav .main-menu-wrapper ul li a:hover{
-    color: aqua;
+    color: white;
+
 }
 header nav .main-menu-wrapper ul li a i{
     font-size: 22px;
@@ -108,9 +110,10 @@ header nav .main-menu-wrapper ul li:last-child{
 }
 header nav .main-menu-wrapper ul li:last-child::before{
     content: '';
+    translate: 3px -7px;
     position: absolute;
     border-left: 1px solid white;
-    height: 100%;
+    height: 140%;
 }
 
 aside{
@@ -164,7 +167,7 @@ aside .may-know .people-infos .people-qualify{
 aside .other-people .people-infos button,
 aside .may-know .people-infos button{
     cursor: pointer;
-    padding: 7px 16px;
+    padding: 4px 16px;
     margin-top: 8px;
     color: var(--texto-principal);
     font-size: 14px;
@@ -314,7 +317,7 @@ main{
 
 .highlights{
     background: var(--fundo-card);
-    padding: 22px 16px;
+    padding: 18px 24px;
 }
 .highlights .post-list{
     display: flex;
@@ -461,13 +464,16 @@ main{
 
 .professional{
     background: var(--fundo-card);
-    padding: 10px 24px;
+    padding: 18px 24px;
 }
 .professional h5{
     line-height: 30px;
 }
 .professional .companies-list{
+    display: flex;
+    flex-direction: column;
     margin-top: 8px;
+    row-gap: 20px;
 }
 .professional .companies-list li{
     display: grid;
@@ -548,7 +554,7 @@ main{
 
 .academic{
     background: var(--fundo-card);
-    padding: 10px 24px;
+    padding: 18px 24px;
 }
 .academic h5{
     line-height: 30px;
