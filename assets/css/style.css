@@ -68,7 +68,7 @@ header nav .logo-search-wrapper #search-input{
     width: 280px;
     padding-left: 40px;
     padding-right: 10px;
-    background: url('/assets/fontawesome6.4.2/svgs/solid/magnifying-glass-solid-gray.svg') no-repeat var(--input);
+    background: url('../fontawesome6.4.2/svgs/solid/magnifying-glass-solid-gray.svg') no-repeat var(--input);
     background-size: 17px;
     background-position-x: 15px;
     background-position-y: center;
@@ -627,4 +627,8 @@ main{
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+
 }
