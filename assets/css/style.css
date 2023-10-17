@@ -551,6 +551,15 @@ main{
     line-height: 20px;
 }
 
+.professional .companies-list .experiences-list .date .duration::before{
+    content: '• ';
+    color: var(--texto-secundario);
+    font-size: 14px;
+    margin: 1px;
+    vertical-align: middle;
+}
+
+
 
 .academic{
     background: var(--fundo-card);
@@ -630,5 +639,42 @@ main{
 }
 
 @media (max-width: 767.98px) {
+    aside{
+        display: none;
+    }
+    main .profile .pictures{
+        display: flex;
+        justify-content: center;
+    }
+    main .profile .profile-picture{
+        left: unset;
+    }
+    main .profile .main-infos{
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+    main .profile .main-infos ul{
+        justify-content: center;
+    }
 
+
+    main .highlights{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    main .highlights .post-list{
+        margin: unset;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .highlights .post-list article{
+        display: flex;
+        flex-direction: column;
+        max-width: unset;
+    }
+    .highlights .post-list article .post-thumb{
+        margin: 0 auto;
+    }
 }
